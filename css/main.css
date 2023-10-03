@@ -1,0 +1,119 @@
+body {
+  font: 24px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Oswald', 'Times New Roman', Times, serif;
+}
+
+.active {
+  font-weight: bold;
+  background-color: rgb(80, 133, 135);
+}
+
+h1 {
+  font-family: 'Merriweather', Arial, Helvetica, sans-serif, sans-serif;
+}
+
+/* Nav */
+nav {
+  background-color: cadetblue;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  flex: auto;
+}
+
+nav a {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+nav a:hover {
+  background-color: rgb(80, 133, 135);
+}
+
+/* Desktop Nav */
+@media (width > 40rem){
+  nav ul {
+    display:flex;
+  }
+}
+/* Hero Section */
+header {
+  height: 80vh;
+  color: white;
+  text-shadow: 2px 2px black;
+
+  background-color: brown;
+  background-image:url(https://picsum.photos/id/22/1500/1300);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header h1, p {
+  margin: 0;
+  max-width: 40ch;
+}
+/* Content */
+main {
+  padding: 1rem;
+  
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  background-color: brown;
+}
+/* Content Media Query */
+@media (width > 40rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Footer */
+footer {
+  background-color:  cadetblue;
+  padding: 1rem;
+}
+
+footer p {
+  text-align: center;
+  max-width: none;
+}
